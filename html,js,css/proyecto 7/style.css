@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #191919;
+}
+
+header{
+    position: relative;
+    border-bottom: solid 2px #e5e5e5;
+    padding: 7em 0 0  0;
+    text-align: center;
+}
+
+#nav
+{
+    position: absolute;
+    top: 3em;
+    font-family: 'Indie Flower', cursive;
+    left: 0;
+    width: 100%;
+}
+
+#nav ul li a
+{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: 800;
+    color: #5f9ea0;
+    outline: 0;
+    -moz-transition:all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
+
+#nav ul li.active a,
+#nav ul li:hover a
+{
+    color: #EEE8AA;
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+
+}
+
+li{height: 100px;}
+/*Ahora vamos a hacerla responsiva*/
+
+@media screen and (max-width: 600px) 
+
+{
+    #nav{
+        background: #250606;
+        top: 0;
+        padding: 0;
+    }
+
+    #nav ul li{
+        float: none;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #5f9ea0;
+        outline: 0;
+        -moz-transition: none;
+        transition: none;
+        -webkit-transition: none;
+    }
+
+    #nav > ul > li.active{
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+
+    #nav > ul > li.active > a,
+    #nav > ul > li:hover > a{
+        color: #EEE8AA;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+        -webkit-transform: none;
+
+    }
+
+    
+    
+}
+
+

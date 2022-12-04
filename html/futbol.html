@@ -1,0 +1,28 @@
+<script>
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+    function calcularTmc(peso, altura){
+        return (peso / (altura * altura));
+
+    }
+
+    nombre = prompt('Informe su nombre')
+    pesoInformado = prompt(nombre + ", informe su peso")
+    alturaInformado = prompt(nombre + ", informe de su altura")
+
+    imcCalculadora = calcularImc(pesoInformado,alturaInformado);
+
+    imprimir(nombre + ", su imc calculado es: " + imcCalculadora)
+
+</script>

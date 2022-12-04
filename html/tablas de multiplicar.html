@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <fieldset>
+        <legend>Tablas</legend>
+        <label for="">¿Que tabla de multiplicar desea generar?:</label>
+        <input type="text" id="txtN1">
+        <br><br>
+        <input type="button" onclick="Generar();" value="Generar">
+
+    </fieldset>
+        
+    </body>
+    <script>
+        function Generar() {
+            var tabla = document.getElementById('txtN1').value;
+            for (var i = 0; i < 10; i++) {
+                document.write(""+tabla+" X "+i+" = "+(i*tabla)+"<br>");
+            }
+        }
+    </script>
+</html>

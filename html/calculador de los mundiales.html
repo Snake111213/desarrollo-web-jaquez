@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculador mundial de la fifa</h1>
+    <script>
+        function saltarLinia() {
+            document.write('<br>');
+            document.write('<br>');
+            document.write('<br>');
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinia();
+
+        }
+
+        var anhioMundial = 1930;
+        var limite = parseInt(prompt('Ingrase el ano para calcular'))
+
+        while(anhioMundial <= limite){
+            document.write('hubo mundial de la fifa en la fecha de ' + anhioMundial + "<br>");
+            anhioMundial = anhioMundial + 4 ;
+        }
+    </script>
+    
+</body>
+</html>
